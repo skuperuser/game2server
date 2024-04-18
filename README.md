@@ -1,5 +1,6 @@
 # alpinecraft
 Can be used to easily transform a (game) server into a general-purpose linux server using proot.
+![readme-image](readme-image.png)
 
 To use this 'jailbreak', follow these steps:
  1. Stop your server.
