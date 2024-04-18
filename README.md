@@ -27,7 +27,6 @@ After this, the directory should contain the following:
 - factorio (<- your executable file)
 
 Now, open the executable file, delete its contents, and paste the contents of copycontents.txt file in it.
-
 That's it. You can now start your server as usual.
 
 ## Known limitations
