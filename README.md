@@ -22,8 +22,10 @@ The executable is /bin/x64/factorio. you'll need to place the files into /bin/x6
 
 After this, the directory should contain the following:
 
-system, init.sh, readme.txt, factorio
-    (your game server's executable)^
+- system
+- init.sh
+- readme.txt
+- factorio
 
 Now, open the executable file, delete its contents, and paste the contents of copycontents.txt file in it.
 
