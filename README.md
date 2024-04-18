@@ -22,7 +22,7 @@ After this, the directory should contain the following:
 - system
 - init.sh
 - readme.txt
-- factorio
+- factorio (<-- your executable file)
 
 Now, open the executable file, delete its contents, and paste the contents of copycontents.txt file in it.
 
