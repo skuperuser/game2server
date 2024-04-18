@@ -1,8 +1,7 @@
 # alpinecraft
-can be used to transform a (game) server into a general-purpose linux server using proot
+can be used to easily transform a (game) server into a general-purpose linux server using proot
 
- To use this 'jailbreak', follow these steps:
-
+To use this 'jailbreak', follow these steps:
  1. Stop your server
 
  2. Take a look at your server's startup args
@@ -13,7 +12,6 @@ can be used to transform a (game) server into a general-purpose linux server usi
 
  5. (Re)start your server
 
-
 ## For example:
 Let's say your startup args are:
 ./bin/x64/factorio --port 19410 --server-settings data/server-settings.json --start-server gamesave.zip
@@ -21,7 +19,6 @@ Let's say your startup args are:
 The executable is /bin/x64/factorio. you'll need to place the files into /bin/x64
 
 After this, the directory should contain the following:
-
 - system
 - init.sh
 - readme.txt
