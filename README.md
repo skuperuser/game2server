@@ -29,3 +29,13 @@ After this, the directory should contain the following:
 Now, open the executable file, delete its contents, and paste the contents of copycontents.txt file in it.
 
 That's it. You can now start your server as usual.
+
+## Known limitations
+Proot comes with some limitations, as it virtualises a filesystem:
+- You will not be able to change any kernel or device setting.
+- You can't create device nodes in /dev.
+- You can't manipulate namespaces.
+- You can't run init systems.
+- Proot may reduce performance
+
+[more info](https://proot-me.github.io/)
