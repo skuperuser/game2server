@@ -34,7 +34,7 @@ Proot comes with some limitations, as it virtualises a filesystem:
 - You will not be able to change any kernel or device setting.
 - You can't create device nodes in /dev.
 - You can't manipulate namespaces.
-- You can't run init systems.
+- You can't run systemd, but this is largely resolved by using openrc
 - Proot may reduce performance
 
 [more info](https://proot-me.github.io/)
