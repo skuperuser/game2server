@@ -1,5 +1,5 @@
 # alpinecraft
-can be used to easily transform a (game) server into a general-purpose linux server using proot.
+Can be used to easily transform a (game) server into a general-purpose linux server using proot.
 
 ![readme-image](readme-image.png)
 
