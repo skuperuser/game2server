@@ -1,9 +1,14 @@
 # alpinecraft
-easily turns a (game) server into a general-purpose linux server using proot.
+Easily turns a (game) server into a general-purpose linux server using proot.
 
+## Why?
+This project was made because I wanted to run a game on my cloud-hosted server but couldn't, as i was stuck in some docker environment with limited tools available and no package manager. 
+
+## How Does It Work?
+Alpinecraft leverages proot, a user-space implementation of chroot, to create **a lightweight Linux environment** within the (game) server. This allows you to install and run additional software, turning your game server into a  Linux server capable of hosting a variety of applications beyond just what you bought it for.
 ![readme-image](readme-image.png)
 
-## To use this 'jailbreak', follow these steps:
+## To change your environment, follow these steps:
  1. Stop your server.
 
  2. Take a look at your server's startup args.
@@ -18,16 +23,17 @@ easily turns a (game) server into a general-purpose linux server using proot.
 Let's say your startup args are:
 ./bin/x64/factorio --port 19410 --server-settings data/server-settings.json --start-server gamesave.zip
 
-The executable is /bin/x64/factorio. you'll need to place the files into /bin/x64.
+The executable is /bin/x64/factorio. You'll need to place the files into /bin/x64.
 
-After this, the directory should contain the following:
+If done correctly, the directory should contain the following:
 - system
 - init.sh
 - readme.txt
 - factorio (<- your executable file)
 
-Now, open the executable file, delete its contents, and paste the contents of copycontents.txt file in it.
-That's it. You can now start your server as usual.
+Next, open the executable file, delete its contents, and paste the contents of the *copycontents.txt* file in it.
+
+At last, restart your server and you'll be greeted with the image above.
 
 ## Known limitations
 Proot comes with some limitations, as it virtualises a filesystem:
