@@ -42,4 +42,7 @@ Proot comes with some limitations, as it virtualises a filesystem:
 - You can't run systemd, but this is largely resolved by using openrc
 - Proot may reduce performance
 
-[more info](https://proot-me.github.io/)
+## But..
+You're unlikely to run in one of these issues, though. Running another game in your server, setting up tools like SSH, interacting with a python environment, or using your server as a vpn are tested and all work fine.
+
+[more info on proot ->](https://proot-me.github.io/)
