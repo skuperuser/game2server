@@ -1,8 +1,9 @@
+#the main file gets copied into the distribution during initialisation, and handles commands. for better interfacing i would recommend you setup SSH instead.
 import os
 from os.path import isdir
 import subprocess
 def startup_text():
-    print("\nWelcome to (prooted) Alpine Linux!\nThis linux distribution is based on the Alpine filesystem.\n\nTo install packages, type apk add <package>\nPackage names should be mostly the same as on ubuntu/debian distro's.\nIf you can't find a package, use /sbin/apk search, or simply google <package name> alpine.\n\nBy default ssh, python, pip and bash (your new default shell) are already installed.\n\nIf you need help, The Alpine Wiki contains a large amount of how-to guides and general\ninformation about administrating Alpine systems.\nSee <https://wiki.alpinelinux.org/>.\n")
+    print("\nWelcome to (prooted) Alpine Linux!\nThis linux distribution is based on the Alpine filesystem.\n\nTo install packages, type apk add <package>\nPackage names should be mostly the same as on ubuntu/debian distro's.\nIf you can't find a package, use /sbin/apk search, or simply google <package name> alpine.\n\nBy default ssh, python, pip and bash (your new default shell) are already installed.\n\nIf you need help, The Alpine Wiki contains a large amount of how-to guides and general\ninformation about administrating Alpine systems.\nSee <https://wiki.alpinelinux.org/>.\n\nHint: For a better experience, please setup and use SSH instead of this interface.\n")
 
 startup_text()
 
@@ -77,24 +78,3 @@ while True:
         print("[ERROR] nuh-uh. Please use <openrc> and <rc-update>, not systemd")
     else:
         execute_cmd(user_input)
-
-
-#    match user_input:
-#        case str if str.startswith("apt"):
-#            user_input.replace("apt", "apk")
-#        
-#        case "bash":
-#            print("Bash is available, but using anything other than the default shell may be broken.\nIf you #want to continue, type /bin/bash instead.")
-#        case _:
-#            is_bin = False
-#            # check
-#            try:
-#                first_word_user_input = user_input.split()[0]
-#                for directory in bin_directories:
-#                    if os.path.exists(f"{directory}/{first_word_user_input}"):
-#                        os.system(f"{directory}/{user_input}")
-#                        is_bin = True
-#            except:
-#                pass
-#            
-#            if not is_bin:
