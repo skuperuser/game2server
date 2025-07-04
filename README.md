@@ -2,14 +2,14 @@
 Easily turns a (game) server into a general-purpose linux server using proot.
 
 ## Why?
-This project was made because I wanted to run a game on my cloud-hosted server but couldn't, as i was stuck in some docker environment with limited tools available and no package manager.
+This project was made because I wanted to run a game on my cloud-hosted server but couldn't, as I was stuck in some docker environment with limited tools available and no package manager.
 
 ![readme-image](readme-image.png)
 
 ## How Does It Work?
-Alpinecraft leverages proot, a user-space implementation of chroot, to create **a lightweight Linux environment** within the (game) server.
+Alpinecraft leverages proot, a user-space implementation of chroot, to create **a lightweight Linux environment** within the (game) server. It uses the same underlying technology that lets you run a linux environment in termux. 
 
-This allows you to install and run additional software, turning your old server into a Linux server capable of hosting a variety of applications beyond just what you bought it for.
+This allows you to install and run additional software, turning your game server into a Linux server capable of hosting a variety of applications beyond just what you bought it for.
 
 ## To get started, follow these steps:
  1. Stop your server.
@@ -43,6 +43,6 @@ Proot comes with some limitations, as it virtualises a filesystem:
 - Proot may reduce performance
 
 ## But..
-You're unlikely to run in one of these issues, though. Running another game in your server, setting up tools like SSH, interacting with a python environment, or using your server as a vpn are tested and all work fine.
+You're unlikely to run in any of these issues, though. Running another game in your server, setting up tools like SSH, interacting with a python environment, or using your server as a vpn are tested and all work fine.
 
 [more info on proot ->](https://proot-me.github.io/)
