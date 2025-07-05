@@ -1,4 +1,4 @@
-# alpinecraft
+# game2server
 Easily turns a (game) server into a general-purpose linux server using proot.
 
 ## Why?
