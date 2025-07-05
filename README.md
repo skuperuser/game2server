@@ -7,7 +7,7 @@ This project was made because I wanted to run a game on my cloud-hosted server b
 ![readme-image](readme-image.png)
 
 ## How Does It Work?
-Alpinecraft leverages proot, a user-space implementation of chroot, to create **a lightweight Linux environment** within the (game) server. It uses the same underlying technology that lets you run a linux environment in termux. 
+This tool leverages proot, a user-space implementation of chroot, to create **a lightweight Linux environment** within the (game) server. It uses the same underlying technology that lets you run a linux environment in termux. 
 
 This allows you to install and run additional software, turning your game server into a Linux server capable of hosting a variety of applications beyond just what you bought it for.
 
